@@ -46,9 +46,9 @@
     <!-- HEADING PART ENDS HERE  -->
 
     <!-- CARD SECTION GOES HERE  -->
-    <main class="bg-gray-900 ">
+    <main class="bg-gray-900 max-h-full">
         <section class="w-10/12 mx-auto pt-12">
-            <div class="grid grid-rows-4 grid-flow-col gap-9">
+            <div class="grid grid-rows-2 grid-flow-col gap-9">
                 <div class="grid grid-cols-4 gap-4">
                     <div class="text-white  border border-black-500">
                         <img class="w-fit" src="/Images/Messi.png" alt="">
@@ -87,9 +87,9 @@
                         </div>
                     </div>
                     <div class="player text-white">
-                        <h1 class="text-2xl text-center">Budget</h1>
-                        <span>Per Player</span>
-                        <input type="text" name="" id="" placeholder="Type price">
+                        <h1 class="text-2xl text-center font-medium">Selected Player</h1>
+
+
                     </div>
                 </div>
                 <!-- ... -->
@@ -130,50 +130,47 @@
                             <button class="bg-blue-500 px-12 py-2 mb-2">Select</button>
                         </div>
                     </div>
-                </div>
-                <div class="grid grid-cols-4 gap-4">
-                    <div class="text-white  border border-black-500">
-                        <img class="w-fit" src="/Images/Messi.png" alt="">
-                        <div class=" text-center w-11/12">
-                            <h1 class="text-2xl font-medium "> Lionel Messi</h1>
-                            <div class=" pl-12 my-3">
-                                <h4 class="flex gap-4 ">36 Goals <li>126 Assists </li>
-                                </h4>
-                            </div>
-
-                            <button class="bg-blue-500 px-12 py-2 mb-2">Select</button>
+                    <div class="calculation text-white grid grid-rows-2">
+                        <h1 class="text-2xl text-center font-medium mb-5">Budget</h1>
+                        <div class="ml-12">
+                            <span>Per Player</span>
+                            <input type="text" name="" id=""
+                                class=" text-center pt-3 pr-4 ml-6 w-3/6 bg-black border border-white">
                         </div>
-                    </div>
-                    <div class="text-white  border border-black-500">
-                        <img class="w-fit" src="/Images/Messi.png" alt="">
-                        <div class=" text-center w-11/12">
-                            <h1 class="text-2xl font-medium "> Lionel Messi</h1>
-                            <div class=" pl-12 my-3">
-                                <h4 class="flex gap-4 ">36 Goals <li>126 Assists </li>
-                                </h4>
-                            </div>
+                        <button class="bg-blue-500 px-16 py-2 mt-5 ml-12">Calculate</button>
 
-                            <button class="bg-blue-500 px-12 py-2 mb-2">Select</button>
+
+                        <div class="ml-8 flex items-center my-5">
+                            <span>Player Expenses</span>
+                            <h5 id="" class=" text-center pt-3 ml-8 w-2/6 mb-2">$<span>5000</span></h5>
                         </div>
-                    </div>
-                    <div class="text-white  border border-black-500">
-                        <img class="w-fit" src="/Images/Messi.png" alt="">
-                        <div class=" text-center w-11/12">
-                            <h1 class="text-2xl font-medium "> Lionel Messi</h1>
-                            <div class=" pl-12 my-3">
-                                <h4 class="flex gap-4 ">36 Goals <li>126 Assists </li>
-                                </h4>
-                            </div>
-
-                            <button class="bg-blue-500 px-12 py-2 mb-2">Select</button>
+                        <div class="ml-12 mb-5 flex items-center gap-4 ">
+                            <span>Manager</span>
+                            <input type="text" name="" id=""
+                                class=" text-center pt-3 ml-4 w-4/6 bg-black border border-white">
+                        </div>
+                        <div class="ml-12 mb-5 flex items-center gap-6">
+                            <span>Coach</span>
+                            <input type="text" name="" id=""
+                                class=" text-center pt-3 ml-8 w-4/6 bg-black border border-white">
+                        </div>
+                        <button class="bg-blue-500 px-12 py-2 mt-5 ml-16 ">Calculate Total</button>
+                        <div class="ml-12 flex items-center my-5 gap-8">
+                            <span>Total</span>
+                            <h5 id="" class=" text-center pt-3 ml-14 w-2/6 mb-2">$<span>5000</span></h5>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </section>
 
     </main>
+    <footer class="bg-gray-900 h-24">
+        <br>
+        <hr class="pt-12">
+    </footer>
 
 
     <script src="JS/script.js"></script>
